@@ -109,7 +109,7 @@
         function pop_zonagetoursdeauArrosglobalis_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['zonage'] !== null ? autolinker.link(feature.properties['zonage'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>zonage</strong><br />' + (feature.properties['zonage'] !== null ? autolinker.link(feature.properties['zonage'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
